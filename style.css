@@ -101,7 +101,7 @@ a{
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(55, 165, 238);
+	border: 2px solid #37a5ee;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
@@ -112,9 +112,48 @@ a{
 
 #hero .cta:hover{
 	color: white;
-	background-color: rgb(55, 165, 238);
+	background-color: #37a5ee;
 }
  /* END OF HERO SECTION */
+
+ /* CARDS SECTION */
+
+ /* Service Section */
+
+ #services{}
+ #services .services{
+	 flex-direction: column;
+	 text-align: center;
+	 max-width: 1500px;
+	 margin: 0 auto;
+	 padding: 100px 0;
+ }
+
+ #services .section-title{
+	 font-size: 4rem;
+	 font-weight: 400;
+	 color: black;
+	 margin-bottom: 10px;
+	 text-transform: uppercase;
+	 letter-spacing: .2rem;
+	 text-align: center;
+ }
+
+ #services .section-title span{
+	 color: #37a5ee;
+ }
+
+ #services .service-top p{
+	 font-size: 1.5rem;
+	 margin-top: 5px;
+	 line-height: 2.5rem;
+	 font-weight: 100;
+	 letter-spacing: .05rem;
+ }
+
+ /* End of Service Section */
+
+ /* END OF CARD SECTION */
 
 @keyframes text_reveal_box {
 	50% {
@@ -135,7 +174,7 @@ a{
 
 @keyframes text_reveal_name {
 	100%{
-		color: rgb(55, 165, 238);
+		color: #37a5ee;
 		font-weight: 700;
 	}
 }
