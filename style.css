@@ -120,7 +120,6 @@ a{
 
  /* Service Section */
 
- #services{}
  #services .services{
 	 flex-direction: column;
 	 text-align: center;
@@ -129,9 +128,13 @@ a{
 	 padding: 100px 0;
  }
 
+ #services .service-top{
+	max-width: 500px;
+	margin: 0 auto;
+ }
  #services .section-title{
 	 font-size: 4rem;
-	 font-weight: 400;
+	 font-weight: 300;
 	 color: black;
 	 margin-bottom: 10px;
 	 text-transform: uppercase;
@@ -144,11 +147,52 @@ a{
  }
 
  #services .service-top p{
-	 font-size: 1.5rem;
+	 font-size: 1.4rem;
 	 margin-top: 5px;
 	 line-height: 2.5rem;
-	 font-weight: 100;
+	 font-weight: 300px;
 	 letter-spacing: .05rem;
+	 display: flex;
+ }
+
+ #services .service-bottom{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+ }
+
+ #services .service-item{
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./images/img-1.jpg);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: -1;
+ }
+
+ #services .service-item::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(black 0%, grey 100%);
+	opacity: .8;
+	z-index: -1;
+ }
+
+ .services .col-right .icon{
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
  }
 
  /* End of Service Section */
